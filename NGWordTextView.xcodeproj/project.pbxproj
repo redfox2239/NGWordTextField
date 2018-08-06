@@ -14,6 +14,8 @@
 		7F074DD1211842DF008FD723 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F074DCF211842DF008FD723 /* LaunchScreen.storyboard */; };
 		7F074DDC211842DF008FD723 /* NGWordTextViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F074DDB211842DF008FD723 /* NGWordTextViewTests.swift */; };
 		7F074DE7211842E0008FD723 /* NGWordTextViewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F074DE6211842E0008FD723 /* NGWordTextViewUITests.swift */; };
+		7F074DF521184303008FD723 /* NGWord.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7F074DF421184303008FD723 /* NGWord.txt */; };
+		7F074DF721184510008FD723 /* AppAcademiaTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F074DF621184510008FD723 /* AppAcademiaTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		7F074DE2211842E0008FD723 /* NGWordTextViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NGWordTextViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F074DE6211842E0008FD723 /* NGWordTextViewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NGWordTextViewUITests.swift; sourceTree = "<group>"; };
 		7F074DE8211842E0008FD723 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7F074DF421184303008FD723 /* NGWord.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = NGWord.txt; sourceTree = "<group>"; };
+		7F074DF621184510008FD723 /* AppAcademiaTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppAcademiaTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,12 +101,14 @@
 		7F074DC5211842DD008FD723 /* NGWordTextView */ = {
 			isa = PBXGroup;
 			children = (
+				7F074DF421184303008FD723 /* NGWord.txt */,
 				7F074DC6211842DD008FD723 /* AppDelegate.swift */,
 				7F074DC8211842DD008FD723 /* ViewController.swift */,
 				7F074DCA211842DD008FD723 /* Main.storyboard */,
 				7F074DCD211842DF008FD723 /* Assets.xcassets */,
 				7F074DCF211842DF008FD723 /* LaunchScreen.storyboard */,
 				7F074DD2211842DF008FD723 /* Info.plist */,
+				7F074DF621184510008FD723 /* AppAcademiaTextField.swift */,
 			);
 			path = NGWordTextView;
 			sourceTree = "<group>";
@@ -230,6 +236,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7F074DD1211842DF008FD723 /* LaunchScreen.storyboard in Resources */,
+				7F074DF521184303008FD723 /* NGWord.txt in Resources */,
 				7F074DCE211842DF008FD723 /* Assets.xcassets in Resources */,
 				7F074DCC211842DD008FD723 /* Main.storyboard in Resources */,
 			);
@@ -258,6 +265,7 @@
 			files = (
 				7F074DC9211842DD008FD723 /* ViewController.swift in Sources */,
 				7F074DC7211842DD008FD723 /* AppDelegate.swift in Sources */,
+				7F074DF721184510008FD723 /* AppAcademiaTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

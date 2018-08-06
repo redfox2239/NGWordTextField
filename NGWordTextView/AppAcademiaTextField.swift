@@ -41,13 +41,14 @@ class AppAcademiaNGTextField: UITextField, UITextFieldDelegate {
     }
     
     func checkText() {
-        if let text = self.text {
-            self.ngWordData.forEach({ (t) in
+        if let text = text {
+            ngWordData.forEach({ (t) in
                 if text.hasSuffix(t) || text.hasPrefix(t) || text.contains(t) {
-                    if self.warningLabel == nil {
-                        self.setUpWarningLabel()
+                    if warningLabel == nil {
+                        setUpWarningLabel()
                     }
-                    self.warningLabel.isHidden = false
+                    warningLabel.isHidden = false
+                    hideWarningLabel()
                     self.text = ""
                 }
             })
@@ -62,6 +63,17 @@ class AppAcademiaNGTextField: UITextField, UITextFieldDelegate {
         warningLabel.isHidden = true
         warningLabel.sizeToFit()
         self.addSubview(warningLabel)
+    }
+    
+    func hideWarningLabel() {
+        Timer.scheduledTimer(withTimeInterval: 2.0, repeats: false) { (ti) in
+            UIView.animate(withDuration: 0.5, animations: {
+                self.warningLabel.alpha = 0
+            }, completion: { (animated) in
+                self.warningLabel.isHidden = true
+                self.warningLabel.alpha = 1.0
+            })
+        }
     }
 
     func getDataFromFile(_ name: String) -> [String] {
